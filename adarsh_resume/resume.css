@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Mali:ital,wght@1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lemonada:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+h1 h2 h3 h4 h5 h6{
+  color: #36424F;
+
+  font-family: 'Noto Sans JP', sans-serif;
+
+}
+a{
+  text-decoration: none;
+}
+p,span{
+  color: #36424F;
+  font-size: 15px;
+  line-height: 1.6;
+  font-stretch: expanded;
+  font-family: 'Open Sans', sans-serif;
+
+}
+strong{
+  font-size: 16px;
+}
+
+/* header section */
+
+.wrapper{
+    position: relative;
+    overflow: hidden;
+    background: url("image/hero1.jpg");
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+.name-section{
+    margin: 100px 0 10px 0;
+    color: #2E3B47;
+    font-size: 3rem;
+    
+}
+.name-section h1{
+    padding-bottom: 20px;
+    font-family: 'Lemonada', cursive;
+  }
+.name-section hr{
+    border-color: #FDFBF8;
+    margin: auto;
+    border-style: groove none none none;
+    width: 30%;
+    border-width: 4px;
+  }
+  .name-section p{
+      padding-top: 20px;
+      font-size: 1.5rem;
+      font-family: 'Mali', cursive;
+  }
+.header{
+    position: absolute;
+    top: 0;
+    z-index: 1;
+  background: url("image/animation1.png");
+  opacity: 0.2;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  perspective: 1000px;
+  perspective-origin: 50% 50%;
+  animation: animation 100s linear infinite;
+}
+
+@keyframes animation {
+   100%{
+    background-position:0px -3000px;
+  }
+}
+
+/* about section */
+
+#about{
+  background-color: #FDFBF8 ;
+  padding: 5% 20%;
+}
+.profile-heading{
+  font-family: 'Noto Sans JP', sans-serif;
+  color: #2E3B47;
+  text-align: center;
+  padding: 30px;
+}
+.profile-heading h1,h4{
+  line-height: 1.6;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.profile-box{
+  font-family: 'Open Sans', sans-serif;
+  padding: 3% ;
+  text-align: left;
+}
+.profile-box h2{
+  color: #2E3B47;
+}
+.profile-box img{
+  border: 10px double #BABABA;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+/* experiences section */
+
+#experiences{
+  width: 100%;
+  background-color: #BABABA;
+  padding: 5% 20%;
+}
+#experiences h1,h4{
+  line-height: 1.6;
+  text-align: center;
+}
+.experience-row{
+  padding: 32px 0;
+}
+
+
+/* ability section */
+
+
+#abilities{
+  background-color: #FDFBF8 ;
+  width: 100%;
+  padding: 5% 20%;
+}
+.ability-heading h1,h4{
+  line-height: 1.6;
+  text-align: center;
+}
+#abilities ul{
+  list-style-type: none;
+}
+.ability-list-item{
+  padding: 6px 0;
+
+}
+.ability-star{
+  float: right;
+}
+.glyphicon{
+  color: #bbd;
+}
+.filled{
+  color: #2E3B47;
+}
+
+/* footer section */
+
+
+#footer{
+  background-color: #434242;
+  width: 100%;
+  padding: 5% 20%;
+}
+.footer-heading{
+  color:#FDFBF8;
+  text-align: center;
+  line-height: 1.6;
+  padding-bottom: 32px;
+}
+.contact-icons{
+  padding: 3% 3%;
+  list-style-type: none;
+}
+.footer-icons{
+  display: inline-block;
+  padding: 16px;
+  height: 50px;
+  width: 50px;
+}
+.contact-icons a{
+  padding: 8px 0;
+  text-decoration: none;
+}
