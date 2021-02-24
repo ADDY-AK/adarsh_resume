@@ -79,6 +79,7 @@ strong{
   animation: animation 100s linear infinite;
 }
 
+
 @keyframes animation {
    100%{
     background-position:0px -3000px;
@@ -91,6 +92,7 @@ strong{
   background-color: #FDFBF8 ;
   padding: 5% 20%;
 }
+
 .profile-heading{
   font-family: 'Noto Sans JP', sans-serif;
   color: #2E3B47;
