@@ -15,7 +15,7 @@ h1 h2 h3 h4 h5 h6{
 
 }
 a{
-  text-decoration: none;
+  text-decoration: none !important;
 }
 p,span{
   color: #36424F;
@@ -27,6 +27,15 @@ p,span{
 }
 strong{
   font-size: 16px;
+}
+hr{
+  border-color: #FDFBF8;
+  margin: 50px 0;
+  border-width: 1px;
+}
+.hrl{
+  border-color: #dde;
+
 }
 
 /* header section */
@@ -50,19 +59,21 @@ strong{
     
 }
 .name-section h1{
-    padding-bottom: 20px;
+    padding: 50px 0 20px 0;
     font-family: 'Lemonada', cursive;
+    font-size: 50px;
   }
 .name-section hr{
     border-color: #FDFBF8;
     margin: auto;
-    border-style: groove none none none;
+    border-style: solid none none none;
     width: 30%;
-    border-width: 4px;
+    border-width: 1px;
   }
   .name-section p{
       padding-top: 20px;
       font-size: 1.5rem;
+      font-size: 18px;
       font-family: 'Mali', cursive;
   }
 .header{
@@ -114,7 +125,7 @@ strong{
   color: #2E3B47;
 }
 .profile-box img{
-  border: 10px double #BABABA;
+  border: 15px solid #BABABA;
   border-radius: 50%;
   display: block;
   margin: 0 auto;
@@ -134,7 +145,19 @@ strong{
 .experience-row{
   padding: 32px 0;
 }
-
+.git-button{
+  margin: 32px;
+  text-align: center;
+}
+.git-button button{
+  border: #FDFBF8;
+  border-radius: 10px;
+  color: #2E3B47;
+  background-color: #FDFBF8 ;
+  padding: 8px 50px;
+  text-align: center;
+  text-decoration: none;
+}
 
 /* ability section */
 
@@ -159,6 +182,7 @@ strong{
   float: right;
 }
 .glyphicon{
+  font-size: 16px;
   color: #bbd;
 }
 .filled{
@@ -170,11 +194,11 @@ strong{
 
 #footer{
   background-color: #434242;
+  color: #FDFBF8;
   width: 100%;
   padding: 5% 20%;
 }
 .footer-heading{
-  color:#FDFBF8;
   text-align: center;
   line-height: 1.6;
   padding-bottom: 32px;
@@ -185,9 +209,9 @@ strong{
 }
 .footer-icons{
   display: inline-block;
-  padding: 16px;
-  height: 50px;
-  width: 50px;
+  background: url(image/icon.png) no-repeat;
+  height: 35px;
+  width: 35px;
 }
 .contact-icons a{
   padding: 8px 0;
