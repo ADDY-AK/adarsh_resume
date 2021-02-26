@@ -19,6 +19,14 @@ h1 h2 h3 h4 h5 h6{
 }
 a{
   text-decoration: none !important;
+  transition: 0.8s;
+}
+a:link,a:visited {
+  color: #dee !important;
+}
+a:hover{
+  font-size: 17px;
+  color: #FDFBF8 !important;
 }
 p,span{
   color: #36424F;
