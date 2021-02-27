@@ -19,13 +19,13 @@ h1 h2 h3 h4 h5 h6{
 }
 a{
   text-decoration: none !important;
-  transition: 0.8s;
+  transition: 0.3s;
 }
 a:link,a:visited {
-  color: #dee !important;
+  color: rgb(138, 135, 135) !important;
 }
 a:hover{
-  font-size: 17px;
+  font-size: 16px;
   color: #FDFBF8 !important;
 }
 p,span{
@@ -110,6 +110,9 @@ hr{
     background-position:0px -3000px;
   }
 }
+/* navigation bar section */
+
+
 
 /* about section */
 
@@ -139,7 +142,7 @@ hr{
   color: #2E3B47;
 }
 .profile-box img{
-  border: 15px solid #BABABA;
+  border: 15px solid #C2C2C2;
   border-radius: 50%;
   display: block;
   margin: 0 auto;
@@ -149,7 +152,7 @@ hr{
 
 #experiences{
   width: 100%;
-  background-color: #BABABA;
+  background-color: #C2C2C2;
   padding: 5% 20%;
 }
 .experience-heading h1,h4{
@@ -165,10 +168,10 @@ hr{
   text-align: center;
 }
 .git-button button{
-  border: #FDFBF8;
+  border: solid #FDFBF8;
   border-radius: 10px;
   color: #2E3B47;
-  background-color: #FDFBF8 ;
+  background-color: #2E3B47 ;
   padding: 8px 50px;
   text-align: center;
   text-decoration: none;
@@ -191,8 +194,13 @@ hr{
   list-style-type: none;
 }
 .ability-list-item{
-  padding: 6px 0;
+  padding: 6px 2px;
 
+}
+.ability-list li:hover{
+  font-size: 18px;
+  /* padding: 0 4px; */
+  background-color: #ddd;
 }
 .ability-star{
   float: right;
