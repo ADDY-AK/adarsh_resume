@@ -29,24 +29,29 @@
             <div class="header"></div>
         </div>
     </header>
+    
 
-    <section>
-        <ul class="nav flex-column navbar">
-            <li class="nav-item">
-              <a class="nav-link active" href="#">Active</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#">Disabled</a>
-            </li>
-          </ul>
+    <nav class="navbar navbar-default" id="navbar-example" role="navigation">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
 
-    </section>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#profile">Profile</a></li>
+                <li class=""><a href="#experiences">Experiences</a></li>
+                <li><a href="#abilities">Abilities</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </nav>
     
     <section id="about">
         <div class="profile">
@@ -463,7 +468,7 @@
         </div>
         
     </section>
-    <footer id="footer">
+    <footer id="contact">
         <div class="footer-heading">
             <h1>Contact</h1>
             <h4>"Without error there can be no brilliancy”
