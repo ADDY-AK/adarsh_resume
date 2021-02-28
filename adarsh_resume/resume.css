@@ -115,25 +115,17 @@ hr{
 }
 /* navigation bar section */
 
-/* nav{
-  position: -webkit-sticky;
-	position: sticky;
-	top: 50px;
-  left: 50px;
-  white-space: nowrap;
-  overflow: hidden;
-}
-nav ul li:hover{
-  color: #2E3B47;
-} */
 .navbar  { 
   border: 0px; 
   background-color: #2E3B47; 
-  position: absolute; 
-  top: 100%; 
-  left: 5%; 
-  width: 110px; 
-  z-index: 999; 
+  position: -webkit-sticky;
+	position: sticky;
+	top: 50px;
+  left: 30px;
+  width: 120px; 
+  z-index: 999;
+  white-space: nowrap;
+  overflow: hidden; 
 }
 
 .navbar .navbar-collapse { 
@@ -155,18 +147,12 @@ nav ul li:hover{
 } 
 
 .navbar .nav > li a {
-  /* display: block; */
   height: 80px;
   text-align: center;
   padding-top: 30px;
-  font-weight: 600;color: #FFFFFF;
+  font-weight: 600;
+  color: #FFFFFF;
 }
-.navbar .nav > li a:hover
- { 
-   color: #C2C2C2; 
-  }
-
-.fixed .navbar  { position: fixed; top: 60px; }
 
 /* about section */
 
