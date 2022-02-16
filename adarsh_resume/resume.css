@@ -1,102 +1,98 @@
-@import url('https://fonts.googleapis.com/css2?family=Mali:ital,wght@1,600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lemonada:wght@600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Mali:ital,wght@1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lemonada:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
 }
-html{
+html {
   scroll-behavior: smooth;
 }
-h1 h2 h3 h4 h5 h6{
-  color: #36424F;
+h1 h2 h3 h4 h5 h6 {
+  color: #36424f;
   line-height: normal;
-  font-family: 'Noto Sans JP', sans-serif !important;
-
+  font-family: "Noto Sans JP", sans-serif !important;
 }
-a{
+a {
   text-decoration: none !important;
   transition: 0.3s;
 }
-a:link,a:visited {
+a:link,
+a:visited {
   color: rgb(138, 135, 135) !important;
 }
-a:hover{
+a:hover {
   font-size: 16px;
-  color: #FDFBF8 !important;
+  color: #fdfbf8 !important;
 }
-p,span{
-  color: #36424F;
+p,
+span {
+  color: #36424f;
   font-size: 15px;
   line-height: 1.6;
   font-stretch: expanded;
-  font-family: 'Open Sans', sans-serif;
-
+  font-family: "Open Sans", sans-serif;
 }
-strong{
+strong {
   font-size: 16px;
   line-height: 1.6;
-  font-family: 'Open Sans', sans-serif;
-
+  font-family: "Open Sans", sans-serif;
 }
-hr{
-  border-color: #FDFBF8;
+hr {
+  border-color: #fdfbf8;
   margin: 50px 0;
   border-width: 1px;
 }
-.hrl{
+.hrl {
   border-color: #dde;
-
 }
 
 /* header section */
 
-.wrapper{
-    position: relative;
-    overflow: hidden;
-    background: url("image/hero1.jpg");
-    background-position: center;
-    background-size: cover;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width: 100%;
+.wrapper {
+  position: relative;
+  overflow: hidden;
+  background: url("image/hero1.jpg");
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
 }
-.name-section{
-    margin: 100px 0 10px 0;
-    color: #2E3B47;
-    font-size: 3rem;
-    
+.name-section {
+  margin: 100px 0 10px 0;
+  color: #2e3b47;
+  font-size: 3rem;
 }
-.name-section h1{
-    padding: 50px 0 20px 0;
-    font-family: 'Lemonada', cursive;
-    font-size: 50px;
-  }
-.name-section hr{
-    border-color: #FDFBF8;
-    margin: auto;
-    border-style: solid none none none;
-    width: 30%;
-    border-width: 1px;
-  }
-  .name-section p{
-      padding-top: 20px;
-      font-size: 1.5rem;
-      font-size: 18px;
-      font-family: 'Mali', cursive;
-  }
-.header{
-    position: absolute;
-    top: 0;
-    z-index: 1;
+.name-section h1 {
+  padding: 50px 0 20px 0;
+  font-family: "Lemonada", cursive;
+  font-size: 50px;
+}
+.name-section hr {
+  border-color: #fdfbf8;
+  margin: auto;
+  border-style: solid none none none;
+  width: 30%;
+  border-width: 1px;
+}
+.name-section p {
+  padding-top: 20px;
+  font-size: 1.5rem;
+  font-size: 18px;
+  font-family: "Mali", cursive;
+}
+.header {
+  position: absolute;
+  top: 0;
+  z-index: 1;
   background: url("image/animation1.png");
   opacity: 0.2;
   background-size: cover;
@@ -107,82 +103,93 @@ hr{
   animation: animation 100s linear infinite;
 }
 
-
 @keyframes animation {
-   100%{
-    background-position:0px -3000px;
+  100% {
+    background-position: 0px -3000px;
   }
 }
 /* navigation bar section */
 
-.navbar  { 
-  border: 0px; 
-  background-color: #2E3B47; 
-  position: -webkit-sticky;
-	position: sticky;
-	top: 50px;
-  left: 30px;
-  width: 120px; 
-  z-index: 999;
-  white-space: nowrap;
-  overflow: hidden; 
+.navbar {
+  /*border: 0px;
+  background-color: #2e3b47;
+  position: absolute;
+  top: 115%;
+  left: 5%;
+  width: 120px;
+  z-index: 999;*/
 }
 
-.navbar .navbar-collapse { 
-  padding: 0px; 
-  max-height: none; 
+.navbar .navbar-collapse {
+  padding: 0px;
+  max-height: none;
 }
 
-.navbar .navbar-nav { 
-  float: none; 
+.navbar .navbar-nav {
+  float: none;
 }
 
-.navbar-nav { 
-  margin: 0px; 
+.navbar-nav {
+  margin: 0px;
 }
-.navbar .nav > li { 
-  display: block; 
-  float: none; 
-  height: 80px; 
-} 
+.navbar .nav > li {
+  display: block;
+  float: none;
+  height: 80px;
+}
 
 .navbar .nav > li a {
   height: 80px;
   text-align: center;
   padding-top: 30px;
   font-weight: 600;
-  color: #FFFFFF;
+  color: #867d7d;
+}
+.fixed .navbar {
+  /*position: absolute;*/
+  top: 60px;
+}
+nav.sticky{
+  border: 0px;
+  background-color: #2e3b47;
+  position: fixed;
+  top: 200px;
+  left: 20px;
+  width: 120px;
+  z-index: 999;
+
 }
 
 /* about section */
 
-#about{
-  background-color: #FDFBF8 ;
+#about {
+  background-color: #fdfbf8;
   padding: 5% 20%;
 }
 
-.profile-heading{
-  font-family: 'Noto Sans JP', sans-serif;
-  color: #2E3B47;
+.profile-heading {
+  font-family: "Noto Sans JP", sans-serif;
+  color: #2e3b47;
   text-align: center;
   padding: 30px;
 }
-.profile-heading h1,h4{
+.profile-heading h1,
+h4 {
   line-height: 1.6;
   margin-bottom: 20px;
   text-align: center;
 }
 
-.profile-box{
-  font-family: 'Open Sans', sans-serif;
-  padding: 3% ;
+.profile-box {
+  font-family: "Open Sans", sans-serif;
+  padding: 3%;
   text-align: left;
 }
-.profile-box h2{
-  color: #2E3B47;
+.profile-box h2 {
+  color: #2e3b47;
 }
-.profile-box img{
-  border: 15px solid #C2C2C2;
+.profile-box img {
+  border: 15px solid #c2c2c2;
   border-radius: 50%;
   display: block;
   margin: 0 auto;
@@ -190,28 +197,29 @@ hr{
 
 /* experiences section */
 
-#experiences{
+#experiences {
   width: 100%;
-  background-color: #C2C2C2;
+  background-color: #c2c2c2;
   padding: 5% 20%;
 }
-.experience-heading h1,h4{
-  font-family: 'Noto Sans JP', sans-serif;
+.experience-heading h1,
+h4 {
+  font-family: "Noto Sans JP", sans-serif;
   line-height: 1.6;
   text-align: center;
 }
-.experience-row{
+.experience-row {
   padding: 32px 0;
 }
-.git-button{
+.git-button {
   margin: 32px;
   text-align: center;
 }
-.git-button button{
-  border: solid #FDFBF8;
+.git-button button {
+  border: solid #fdfbf8;
   border-radius: 10px;
-  color: #2E3B47;
-  background-color: #2E3B47 ;
+  color: #2e3b47;
+  background-color: #2e3b47;
   padding: 8px 50px;
   text-align: center;
   text-decoration: none;
@@ -219,66 +227,64 @@ hr{
 
 /* ability section */
 
-
-#abilities{
-  background-color: #FDFBF8 ;
+#abilities {
+  background-color: #fdfbf8;
   width: 100%;
   padding: 5% 20%;
 }
-.ability-heading h1,h4{
-  font-family: 'Noto Sans JP', sans-serif;
+.ability-heading h1,
+h4 {
+  font-family: "Noto Sans JP", sans-serif;
   line-height: 1.6;
   text-align: center;
 }
-#abilities ul{
+#abilities ul {
   list-style-type: none;
 }
-.ability-list-item{
+.ability-list-item {
   padding: 6px 2px;
-
 }
-.ability-list li:hover{
+.ability-list li:hover {
   font-size: 18px;
   /* padding: 0 4px; */
   background-color: #ddd;
 }
-.ability-star{
+.ability-star {
   float: right;
 }
-.glyphicon{
+.glyphicon {
   font-size: 16px;
   color: #bbd;
   padding-left: 2px;
 }
-.filled{
-  color: #2E3B47;
+.filled {
+  color: #2e3b47;
 }
 
 /* footer section */
 
-
-#contact{
+#contact {
   background-color: #434242;
-  color: #FDFBF8;
+  color: #fdfbf8;
   width: 100%;
   padding: 5% 20%;
 }
-.footer-heading{
-  font-family: 'Noto Sans JP', sans-serif;
+.footer-heading {
+  font-family: "Noto Sans JP", sans-serif;
   text-align: center;
   line-height: 1.6;
   padding-bottom: 32px;
 }
-.contact-icons{
+.contact-icons {
   padding: 3% 3%;
   list-style-type: none;
 }
-.footer-icons{
+.footer-icons {
   float: left;
   height: 32px;
   width: 32px;
 }
-.contact-icons a{
+.contact-icons a {
   font-size: 16px;
   margin-left: 10px;
   padding: 16px 0;

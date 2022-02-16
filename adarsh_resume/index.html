@@ -8,17 +8,23 @@
     <link rel="icon" href="favicon.ico">
 
     <!-- bootstrap scripts -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
+    <script src="./script.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-    <link rel="stylesheet" href="resume.css">
+    <link rel="stylesheet" href="./resume.css">
+    <title>Adarsh_Kumar</title>
 
+     
 
-     <title>Adarsh_Kumar</title>
+     
+
 </head>
-<body>
+
+
+<body data-spy="scroll" data-target="#navbar-example">
     <header>
         <div class="wrapper">
             <div class="name-section">
@@ -29,8 +35,6 @@
             <div class="header"></div>
         </div>
     </header>
-    
-
     <nav class="navbar navbar-default" id="navbar-example" role="navigation">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
@@ -43,7 +47,7 @@
         
 
         <div class="collapse navbar-collapse navbar-ex1-collapse">
-            <ul class="nav navbar-nav">
+            <ul class="nav navbar-nav" id="menu">
                 <li ><a href="#about">Profile</a></li>
                 <li ><a href="#experiences">Experiences</a></li>
                 <li><a href="#abilities">Abilities</a></li>
@@ -53,6 +57,7 @@
     </nav>
     
     <section id="about">
+        
         <div class="profile">
             <div class="profile-heading">
                 <h1>Profile</h1>
@@ -516,6 +521,33 @@
         </div>
     
       </footer>
+      <!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> -->
+
+      <script>
+          var navbar = document.getElementById("navbar-example");
+          var menu = document.getElementById("menu");
+
+          window.onscroll = function(){
+              if(window.pageYOffset>=menu.offsetTop){
+                  navbar.classList.add("sticky");
+              }
+              else{
+                  navbar.classList.remove("sticky");
+              }
+          }
+      </script>
+      <script type="text/javascript" id="inspectletjs">
+        window.__insp = window.__insp || [];
+        __insp.push(['wid', 92785244]);
+        (function() {
+            function __ldinsp(){var insp = document.createElement('script'); insp.type = 'text/javascript'; insp.async = true; insp.id = "inspsync"; insp.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://www.inspectlet.com/inspectlet.js'; var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(insp, x); }
+            if (window.attachEvent){
+                window.attachEvent('onload', __ldinsp);
+            }else{
+                window.addEventListener('load', __ldinsp, false);
+            }
+        })();
+    </script>
     
 </body>
 </html>
