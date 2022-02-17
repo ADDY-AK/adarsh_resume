@@ -111,6 +111,7 @@ hr {
 /* navigation bar section */
 
 .navbar {
+  top: 10%;
   /*border: 0px;
   background-color: #2e3b47;
   position: absolute;
@@ -120,10 +121,11 @@ hr {
   z-index: 999;*/
 }
 
-.navbar .navbar-collapse {
+/* .navbar .navbar-collapse {
   padding: 0px;
   max-height: none;
-}
+} */
+
 
 .navbar .navbar-nav {
   float: none;
@@ -153,10 +155,14 @@ nav.sticky{
   border: 0px;
   background-color: #2e3b47;
   position: fixed;
-  top: 200px;
+  float: left;
+  vertical-align: middle;
+  margin-top: auto;
+  margin-bottom: auto;
+  /* top: 100px; */
   left: 20px;
   width: 120px;
-  z-index: 999;
+  z-index: 9999;
 
 }
 
@@ -288,4 +294,11 @@ h4 {
   font-size: 16px;
   margin-left: 10px;
   padding: 16px 0;
+}
+
+@media only screen and (max-width: 740px) {
+  #navbar-example{
+    display: none;
+  }
+ 
 }
